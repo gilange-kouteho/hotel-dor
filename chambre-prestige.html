@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Prestige - Hôtel Grand Prestige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-star"></i>
+                <h1>Hôtel l'Etoile d'or</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+                <li><a href="chambres.html" class="nav-link active">Chambres</a></li>
+                <li><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link btn-primary">Réserver</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Room Detail Section -->
+    <section class="room-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> > <a href="chambres.html">Chambres</a> > Suite Prestige
+            </div>
+            
+            <div class="room-detail-content">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="images/chambre-p1.jpg" alt="Suite Prestige" id="mainImage">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="images/chambre-p1.jpg" alt="Vue d'ensemble" onclick="changeImage(this.src)">
+                        <img src="images/chambre-p2.jpg" alt="Salon luxueux" onclick="changeImage(this.src)">
+                        <img src="images/chambre-p3.jpg" alt="Salle de bain avec jacuzzi" onclick="changeImage(this.src)">
+                        <img src="images/chambre-p6.jpg" alt="Terrasse privée" onclick="changeImage(this.src)">
+                    </div>
+                </div>
+
+                <div class="room-info-detail">
+                    <h1>Suite Prestige</h1>
+                    <div class="room-price-large">230.000 FCFA <span>par nuit</span></div>
+                    
+                    <div class="room-description">
+                        <p>Notre suite prestige est le summum du luxe, offrant un espace de vie exceptionnel de 70m² et des services personnalisés. Un véritable havre de paix où raffinement et élégance se rencontrent pour une expérience inoubliable.</p>
+                        <p>Profitez d'un salon spacieux séparé avec cheminée, d'une chambre somptueuse avec lit king-size, d'une terrasse privée avec vue panoramique et d'une salle de bain avec jacuzzi. Notre service de majordome 24h/24 répondra à tous vos besoins.</p>
+                    </div>
+
+                    <div class="room-specs">
+                        <div class="spec-item">
+                            <strong>Superficie:</strong> 70 m²
+                        </div>
+                        <div class="spec-item">
+                            <strong>Capacité:</strong> 2-4 personnes
+                        </div>
+                        <div class="spec-item">
+                            <strong>Lit:</strong> 1 lit king-size premium (200x200cm)
+                        </div>
+                        <div class="spec-item">
+                            <strong>Vue:</strong> Vue panoramique
+                        </div>
+                    </div>
+
+                    <div class="amenities-section">
+                        <h3>Équipements et services</h3>
+                        <div class="amenities-grid">
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-bed"></i></span>
+                                <span>Lit king-size avec linge de luxe</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-hot-tub"></i></span>
+                                <span>Salle de bain avec jacuzzi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-fire"></i></span>
+                                <span>Salon avec cheminée</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-mountain"></i></span>
+                                <span>Terrasse privée</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-concierge-bell"></i></span>
+                                <span>Service de majordome 24h/24</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-bread-slice"></i></span>
+                                <span>Petit-déjeuner inclus</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-glass-cheers"></i></span>
+                                <span>Bar privé et champagne offert</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-film"></i></span>
+                                <span>Système home cinéma</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-volume-up"></i></span>
+                                <span>Système audio Bose</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-car"></i></span>
+                                <span>Service de voiturier</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-luggage-cart"></i></span>
+                                <span>Service de bagagiste</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon"><i class="fas fa-plane"></i></span>
+                                <span>Transfert aéroport inclus</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-section">
+                        <a href="reservation.html" class="btn btn-primary btn-large">Réserver cette suite</a>
+                        <a href="chambres.html" class="btn btn-outline">Voir autres chambres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Rooms -->
+    <section class="related-rooms">
+        <div class="container">
+            <h2 class="section-title">Vous pourriez aussi aimer</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="images/affiche1.jpg" alt="Chambre Standard">
+                    <div class="room-info">
+                        <h3>Chambre Standard</h3>
+                        <p>Confort et élégance pour un séjour parfait</p>
+                        <div class="room-price">À partir de 80.000 FCFA/nuit</div>
+                        <a href="chambre-standard.html" class="btn btn-outline">Voir détails</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="images/affiche2.jpg" alt="Chambre Deluxe">
+                    <div class="room-info">
+                        <h3>Chambre Deluxe</h3>
+                        <p>Luxe et raffinement dans un espace généreux</p>
+                        <div class="room-price">À partir de 130.000 FCFA/nuit</div>
+                        <a href="chambre-deluxe.html" class="btn btn-outline">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hôtel l'Etoile d'or</h3>
+                    <p>156 rue de la paix Brazzaville Congo</p>
+                    <p>Tel: +242 06 840 48 32</p>
+                    <p>Email: contact@etoiledor.cg</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hôtel l'Etoile d'or. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImage(src) {
+            console.log("Changing image to:", src);
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.src = src.replace(/w=\d+/g, 'w=1200');
+                console.log("Image changed to:", mainImage.src);
+            } else {
+                console.error("Main image element not found!");
+            }
+        }
+
+        // Initialiser les miniatures au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+            thumbnails.forEach(function(img) {
+                img.addEventListener('click', function() {
+                    changeImage(this.src);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

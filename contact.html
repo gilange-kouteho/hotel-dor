@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hôtel Grand Prestige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-star"></i>
+                <h1>Hôtel l'Etoile d'or</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+                <li><a href="chambres.html" class="nav-link">Chambres</a></li>
+                <li><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link btn-primary">Réserver</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="contact-header">
+        <div class="overlay"></div>
+        <div class="container-contact">
+            <h1>Nous Contacter</h1>
+            <p>Nous sommes à votre disposition pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informations de Contact</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>156 rue de la paix Brazzaville Congo</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>Réception: <a href="tel:+242 06 840 48 32">+242 06 840 48 32</a></p>
+                            <p>Restaurant: <a href="tel:+242 06 840 48 32">+242 06 840 48 32</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>Général: <a href="mailto:contact@etoiledor.cg">contact@etoiledor.cg</a></p>
+                            <p>Réservations: <a href="mailto:reservations@etoiledor.cg">reservations@etoiledor.cg</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-details">
+                            <h4>Horaires de Réception</h4>
+                            <p>24h/24 - 7j/7</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envoyez-nous un message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Nom complet</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Téléphone</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Sujet</label>
+                                <select id="contactSubject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="reservation">Réservation</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="services">Services</option>
+                                    <option value="evenement">Événement privé</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="Décrivez votre demande..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                            <button type="reset" class="btn btn-outline">Effacer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Notre Emplacement</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600" alt="Carte de localisation" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h4>Hôtel l'Etoile d'or</h4>
+                            <p>156 rue de la paix Brazzaville Congo</p>
+                            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-small">Voir sur Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Section -->
+    <section class="transport-section">
+        <div class="container">
+            <h2 class="section-title">Comment nous rejoindre</h2>
+            <div class="transport-grid">
+                <div class="transport-card">
+                    <div class="transport-icon"><i class="fas fa-plane"></i></div>
+                    <h4>Depuis l'Aéroport</h4>
+                    <p><strong>Aéroport de Brazzaville:</strong> 10 min en voiture</p>
+                    <p><strong>Aéroport de Pointe-Noire:</strong> 30 min en voiture</p>
+                    <p>Navette privée sur demande</p>
+                </div>
+               
+                <div class="transport-card">
+                    <div class="transport-icon"><i class="fas fa-car"></i></div>
+                    <h4>Voiture</h4>
+                    <p>Parking privé sécurisé disponible</p>
+                    <p>Service de voiturier inclus</p>
+                    <p>Accès direct depuis le périphérique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Quel est l'horaire d'arrivée et de départ ?</h4>
+                    <p>L'enregistrement se fait à partir de 15h et le départ est prévu avant 11h. Un départ tardif peut être arrangé selon disponibilité.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Proposez-vous un service de navette ?</h4>
+                    <p>Oui, nous proposons une navette aéroport sur réservation (33.000 FCFA/trajet).</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Y a-t-il un parking ?</h4>
+                    <p>Oui, nous disposons d'un parking privé sécurisé avec service de voiturier (13.000 FCFA/jour).</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Les animaux sont-ils acceptés ?</h4>
+                    <p>Oui, nous accueillons vos compagnons à quatre pattes avec des services dédiés (supplément de 16.500 FCFA/nuit).</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Comment puis-je réserver une table au restaurant ?</h4>
+                    <p>Vous pouvez réserver par téléphone, email ou via le formulaire de contact de notre site web.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Proposez-vous des forfaits spéciaux ?</h4>
+                    <p>Oui, nous avons plusieurs forfaits pour les séjours romantiques, bien-être ou d'affaires. Contactez-nous pour plus d'informations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hôtel l'Etoile d'or</h3>
+                    <p>156 rue de la paix Brazzaville Congo</p>
+                    <p>Tel: +242 06 840 48 32</p>
+                    <p>Email: contact@etoiledor.cg</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hôtel l'Etoile d'or. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

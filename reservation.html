@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Hôtel Grand Prestige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-star"></i>
+                <h1>Hôtel l'Etoile d'or</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+                <li><a href="chambres.html" class="nav-link">Chambres</a></li>
+                <li><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link btn-primary active">Réserver</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Réservation</h1>
+            <p>Réservez votre séjour d'exception</p>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="form-container">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-section">
+                            <h3>Dates de séjour</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkin">Date d'arrivée</label>
+                                    <input type="date" id="checkin" name="checkin" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkout">Date de départ</label>
+                                    <input type="date" id="checkout" name="checkout" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Type de chambre</h3>
+                            <div class="form-group">
+                                <label for="roomType">Type de chambre</label>
+                                <select id="roomType" name="roomType" required>
+                                    <option value="">Choisissez un type de chambre</option>
+                                    <option value="standard">Chambre Standard - 80.000 FCFA/nuit</option>
+                                    <option value="deluxe">Chambre Deluxe - 130.000 FCFA/nuit</option>
+                                    <option value="suite">Suite Prestige - 230.000 FCFA/nuit</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Nombre de personnes</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">Adultes</label>
+                                    <select id="adults" name="adults" required>
+                                        <option value="1">1 adulte</option>
+                                        <option value="2" selected>2 adultes</option>
+                                        <option value="3">3 adultes</option>
+                                        <option value="4">4 adultes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">Enfants</label>
+                                    <select id="children" name="children">
+                                        <option value="0" selected>0 enfant</option>
+                                        <option value="1">1 enfant</option>
+                                        <option value="2">2 enfants</option>
+                                        <option value="3">3 enfants</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Informations personnelles</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Prénom</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nom</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Services supplémentaires</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="breakfast">
+                                    <span class="checkmark"></span>
+                                    Petit-déjeuner continental (+10.000 FCFA/personne/jour)
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="parking">
+                                    <span class="checkmark"></span>
+                                    Parking privé (+13.000 FCFA/jour)
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="spa">
+                                    <span class="checkmark"></span>
+                                    Accès spa (+20.000 FCFA/personne)
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="services" value="airport">
+                                    <span class="checkmark"></span>
+                                    Navette aéroport (+33.000 FCFA/trajet)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Demandes spéciales</h3>
+                            <div class="form-group">
+                                <textarea id="specialRequests" name="specialRequests" placeholder="Indiquez ici vos demandes spéciales (lit bébé, régime alimentaire, etc.)"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Confirmer la réservation</button>
+                            <button type="reset" class="btn btn-outline">Réinitialiser</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="reservation-summary">
+                    <div class="summary-card">
+                        <h3>Récapitulatif</h3>
+                        <div class="summary-item">
+                            <span>Dates:</span>
+                            <span id="summaryDates">Non sélectionnées</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Durée:</span>
+                            <span id="summaryNights">- nuits</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Chambre:</span>
+                            <span id="summaryRoom">Non sélectionnée</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Personnes:</span>
+                            <span id="summaryGuests">2 adultes</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item">
+                            <span>Sous-total chambre:</span>
+                            <span id="summarySubtotal">0 FCFA</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Services:</span>
+                            <span id="summaryServices">0 FCFA</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="summaryTotal">0 FCFA</span>
+                        </div>
+                        
+                        <div class="booking-benefits">
+                            <h4>Inclus dans votre séjour</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Wi-Fi gratuit</li>
+                                <li><i class="fas fa-check"></i> Service de conciergerie 24h/24</li>
+                                <li><i class="fas fa-check"></i> Accès à la salle de fitness</li>
+                                <li><i class="fas fa-check"></i> Annulation gratuite jusqu'à 24h avant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hôtel l'Etoile d'or</h3>
+                    <p>156 rue de la paix Brazzaville Congo</p>
+                    <p>Tel: +242 06 840 48 32</p>
+                    <p>Email: contact@etoiledor.cg</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hôtel l'Etoile d'or. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

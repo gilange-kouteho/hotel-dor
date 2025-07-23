@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Hôtel Grand Prestige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-star"></i>
+                <h1>Hôtel l'Etoile d'or</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+                <li><a href="chambres.html" class="nav-link">Chambres</a></li>
+                <li><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link btn-primary">Réserver</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Galerie Photos</h1>
+            <p>Découvrez l'élégance de nos espaces</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tout voir</button>
+                <button class="filter-btn" data-filter="chambres">Chambres</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+                <button class="filter-btn" data-filter="spa">Spa & Wellness</button>
+                <button class="filter-btn" data-filter="hotel">Espaces Communs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Chambres -->
+                <div class="gallery-item" data-category="chambres">
+                    <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chambre Standard" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Chambre Standard</h4>
+                        <p>Confort et élégance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="chambres">
+                    <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chambre Deluxe" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Chambre Deluxe</h4>
+                        <p>Espace et raffinement</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="chambres">
+                    <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Suite Prestige" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Suite Prestige</h4>
+                        <p>Le summum du luxe</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="chambres">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salle de bain" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Salle de Bain</h4>
+                        <p>Marbre et finitions de luxe</p>
+                    </div>
+                </div>
+
+                <!-- Restaurant -->
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Le Prestige" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Restaurant Le Prestige</h4>
+                        <p>Ambiance raffinée</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cuisine ouverte" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Cuisine Ouverte</h4>
+                        <p>Art culinaire en action</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Table dressée" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Art de la Table</h4>
+                        <p>Présentation soignée</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/370984/pexels-photo-370984.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bar à vins" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Cave à Vins</h4>
+                        <p>Sélection d'exception</p>
+                    </div>
+                </div>
+
+                <!-- Spa -->
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.pexels.com/photos/3790811/pexels-photo-3790811.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piscine intérieure" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Piscine Intérieure</h4>
+                        <p>Détente et sérénité</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salle de massage" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Salle de Massage</h4>
+                        <p>Bien-être absolu</p>
+                    </div>
+                </div>
+
+                
+                
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salle de fitness" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Salle de Fitness</h4>
+                        <p>Équipements modernes</p>
+                    </div>
+                </div>
+
+                <!-- Espaces Communs -->
+                <div class="gallery-item" data-category="hotel">
+                    <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hall d'accueil" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Hall d'Accueil</h4>
+                        <p>Première impression</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotel">
+                    <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salon de réception" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Salon de Réception</h4>
+                        <p>Convivialité et élégance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotel">
+                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Terrasse" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Terrasse</h4>
+                        <p>Vue panoramique</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotel">
+                    <img src="https://images.pexels.com/photos/4064835/pexels-photo-4064835.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Business Center" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Business Center</h4>
+                        <p>Espaces de travail modernes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotel">
+                    <img src="images/parking.jpg" alt="Parking" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Parking</h4>
+                        <p>Parking gratuit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close"><i class="fas fa-times"></i></span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h4 id="lightboxTitle"></h4>
+                <p id="lightboxDescription"></p>
+            </div>
+            <button class="lightbox-prev" id="lightboxPrev" title="Image précédente"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightboxNext" title="Image suivante"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Venez découvrir ces espaces en personne</h2>
+            <p>Réservez votre séjour et vivez l'expérience Grand Prestige</p>
+            <a href="reservation.html" class="btn btn-primary btn-large">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hôtel l'Etoile d'or</h3>
+                    <p>156 rue de la paix Brazzaville Congo</p>
+                    <p>Tel: +242 06 840 48 32</p>
+                    <p>Email: contact@etoiledor.cg</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hôtel l'Etoile d'or. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
